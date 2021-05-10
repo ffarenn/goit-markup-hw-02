@@ -219,6 +219,7 @@ body {
 /* ======== Radio button section ======== */
 
 .r-button {
+  font-family: inherit;
   background: #f5f4fa;
   border: none;
   border-radius: 4px;
