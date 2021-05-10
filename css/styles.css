@@ -1,4 +1,5 @@
 :root {
+  --primary-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
@@ -7,8 +8,8 @@
   --background-color: #e5e5e5;
 }
 
-.body .main {
-  font-family: "Roboto";
+body {
+  font-family: var(--primary-font);
   color: var(--background-color);
 }
 
@@ -64,6 +65,7 @@
 /* ======== NAVIGATION ======== */
 
 .menu-link {
+  font-family: var(--primary-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -76,7 +78,8 @@
   color: var(--accent-color);
 }
 
-.menu-item .link:active {
+.menu-item .link:active,
+.menu-item .link:visited {
   color: var(--accent-color);
 }
 
@@ -89,6 +92,7 @@
 .footer-contact-links {
   font-size: 14px;
   line-height: 1.7;
+  font-style: normal;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
