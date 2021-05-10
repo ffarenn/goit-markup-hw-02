@@ -1,6 +1,5 @@
 :root {
-  --main-font: Robobo, sans-serif;
-  --secondary-font: Raleway, sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --h1-button-text-color: #ffffff;
@@ -8,8 +7,8 @@
   --background-color: #e5e5e5;
 }
 
-.body {
-  font-family: var(--main-font);
+.body .main {
+  font-family: "Roboto";
   color: var(--background-color);
 }
 
@@ -77,8 +76,7 @@
   color: var(--accent-color);
 }
 
-.menu-link .link:active,
-.menu-link .link:visited {
+.menu-item .link:active {
   color: var(--accent-color);
 }
 
@@ -127,6 +125,7 @@
 }
 
 .hero-title {
+  font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
