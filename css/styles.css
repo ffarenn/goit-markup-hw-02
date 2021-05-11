@@ -6,6 +6,11 @@
   --h1-button-text-color: #ffffff;
   --accent-color: #2196f3;
   --background-color: #e5e5e5;
+  --hero-footer-background: #2f303a;
+  --radio-button-section-background: #f5f4fa;
+  --footer-contact-link-color: rgba(255, 255, 255, 0.6);
+  --logo-top-color: #000000;
+  --button-shaddow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -53,7 +58,7 @@ body {
 }
 
 .logo-top {
-  color: #000000;
+  color: var(--logo-top-color);
 }
 
 .logo-bottom {
@@ -78,8 +83,7 @@ body {
   color: var(--accent-color);
 }
 
-.menu-item .link:active,
-.menu-item .link:visited {
+.menu-item .link.current {
   color: var(--accent-color);
 }
 
@@ -94,7 +98,7 @@ body {
   line-height: 1.7;
   font-style: normal;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contact-link-color);
 }
 /* ======== END CONTACTS ======== */
 
@@ -125,11 +129,12 @@ body {
 /* ======== HERO SECTION ======== */
 
 .hero {
-  background: #2f303a;
+  background: var(--hero-footer-background);
+  align-items: center;
 }
 
 .hero-title {
-  font-family: Roboto;
+  font-family: var(--primary-font);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -141,8 +146,9 @@ body {
 
 .modal-btn {
   background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--button-shaddow);
   border-radius: 4px;
+  text-align: center;
 }
 
 /* ======== END HERO SECTION ======== */
@@ -169,7 +175,7 @@ body {
 
 /* ======== OUR TEAM SECTION ======== */
 .our-team {
-  background: #f5f4fa;
+  background: var(--radio-button-section-background);
 }
 
 .team-title-name {
@@ -197,7 +203,7 @@ body {
   height: 252px;
   left: 0px;
   top: 2097px;
-  background: #2f303a;
+  background: var(--hero-footer-background);
 }
 
 /* ======== FOOTER ======== */
@@ -220,7 +226,7 @@ body {
 
 .r-button {
   font-family: inherit;
-  background: #f5f4fa;
+  background: var(--radio-button-section-background);
   border: none;
   border-radius: 4px;
   color: var(--primary-text-color);
